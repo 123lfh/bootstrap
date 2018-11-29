@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+<body>
+<!--modal 模态 形态-->
+<!--fade模态框淡入出现-->
+<!--modal-dialog:对话框-->
+<!--modal-content：对话框内容-->
+<!--modal-header：对话框头部-->
+<!--modal-body：对话框身体-->
+<!--modal-footer：对话框底部-->
+<!--data-dismiss="modal"：点击可关闭模态框-->
+<!--模态框-->
+<div class="container">
+    <!--button按钮写法-->
+    <!--<button href="#mymodal" class="btn btn-primary" data-toggle="modal"data-target="#mymodal" >模态框</button>-->
+    <!--a标签写法 直接在href路径里写目的地址-->
+    <a href="#mymodal" class="btn btn-primary" data-toggle="modal" >模态框</a>
+    <!--js写法-->
+    <!--<button class="btn btn-primary smodal">模态框</button>-->
+
+    <!--modal模态 形态-->
+
+    <div id="mymodal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close" data-dismiss="modal">&times;
+                        <!--&times;叉号-->
+                    </div>
+                    <h3>努力学习</h3>
+                </div>
+                <div class="modal-body">
+                    <h4>努力学习</h4>
+                    <p>哈哈哈哈哈哈哈哈哒哒哒哒哒</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default save">save</button>
+                    <button class="btn btn-success" data-dismiss="modal">close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+//    hide.bs.modal=>data-dismiss   show.bs.modal=>显示
+    $(function(){
+        $(".save").click(function(){
+            $("#mymodal").modal("hide");
+
+        });
+        $(".smodal").click(function(){
+            $("#mymodal").modal("show")
+        });
+        $("#mymodal").on("shown.bs.modal",function(e){
+            $("body").css({"background":"yellow"})
+        });
+        $("#mymodal").on("hidden.bs.modal",function(e){
+            $("body").css({"background":"blue"})
+        })
+    })
+</script>
+</body>
+</html>

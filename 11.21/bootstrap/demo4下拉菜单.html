@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div>1111</div>
+    <div>2222</div>
+    <div>3333</div>
+    <div>4444</div>
+    <div class="dropdown pull-right">
+        <!--role 增强语义化  -->
+        <button class="btn btn-default dropdown-toggle" id="dropdownone" aria-haspopup="true" aria-expanded="true" data-toggle="dropdown">toggle<span class="caret"></span></button>
+        <!--dropdown-toggle下拉菜单的意思  aria-haspopup="true" 向上或者向下-->
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownone">
+            <!--"dropdown-menu"下拉菜单-->
+            <div class="dropdown-header">3333</div>
+            <div class="">3333</div>
+            <div class="">3333</div>
+            <div class="divider">3333</div>
+            <div class="disabled">3333</div>
+        </div>
+    </div>
+    <div class="btn btn-group btn-danger">
+        <button>11</button>
+        <button>333</button>
+        <button>44</button>
+        <button>555</button>
+    </div>
+    <nav role="nav">
+        <div role="navigation">navigation是nav下面的东西</div>
+    </nav>
+</div>
+</body>
+</html>

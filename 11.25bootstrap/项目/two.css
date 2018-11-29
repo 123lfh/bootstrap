@@ -1,0 +1,46 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.top{
+    width: 100%;
+    height: 500px;
+    background: url("img/20160713154957678313.jpg")no-repeat top center;
+}
+.navbar{
+    background: rgba(0,0,0,0);
+    border: none;
+}
+#mynavbar ul{
+    margin: 40px 0 0 224px;
+}
+#mynavbar ul li a{
+    color: white;
+}
+#mynavbar ul li{
+    text-align: center;
+}
+#mynavbar ul li:hover{
+    margin-left: 5px;
+    background-color: #00a345;
+}
+.pingguo{
+    position: relative!important;
+    left: 25px!important;
+}
+footer .container-fluid .search .col-lg-8 .input-group span{
+    background: #00CC00;
+    padding: 0 40px;
+}
+.pt{
+    padding-top: 35px;
+}
+.foot{
+    padding: 40px 0;
+}
+.foot h5{
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.search{
+    padding:40px 0;
+}

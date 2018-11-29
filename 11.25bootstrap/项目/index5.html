@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=VMore464B6Wt5rgg4kClqKUt7rGafkOQ"></script>
+    <style>
+        .text-white{
+            color: #ffffff!important;
+        }
+        .ul1 li a{
+            border: 0;
+            padding: 0;
+        }
+        .ul1 li{
+            padding: 30px 0;
+        }
+        .ul1 li.active,.ul1 li.active a,.ul1 li:hover{
+            background: #00CC00;
+        }
+        .bg-white{
+            background: #ffffff;
+            height: 30px;
+            width: 30px;
+        }
+        .ttt{
+            padding-top: 30px;
+        }
+        .mag{
+            margin-top: 200px;
+        }
+        .btn{
+            border-radius: 0;
+        }
+        .yuan li{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background: #00CC00;
+        }
+        .yuan li.active{
+            background: #cccccc;
+        }
+        footer .container-fluid .search .col-lg-8 .input-group span{
+            background: #00CC00;
+            padding: 0 40px;
+        }
+        .pt{
+            padding-top: 35px;
+        }
+        .foot{
+            padding: 40px 0;
+        }
+        .foot h5{
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+        .search{
+            padding:40px 0;
+        }
+        .content{
+            padding: 80px 0;
+        }
+        #allmap{
+            margin-top: 30px;
+            height: 500px;
+            width: 100%;
+        }
+        .row .col-lg-4 .text-muted{
+            line-height:30px;
+        }
+        .form-control{
+            border-radius: 0;
+        }
+        .eara{
+            height: 140px;
+            margin-top: 15px;
+        }
+        .bg2{
+            background: url("img/8.jpg")no-repeat;
+            height: 100%;
+            background-size: 100% 100%;
+        }
+        .bg3{
+            background: url("img/9.jpg")no-repeat;
+        }
+        .icon{
+            background: url("img/img-sp.png")no-repeat;
+        }
+        .i1{
+            background-position: -6px -13px;
+        }
+        .i2{
+            background-position: -50px -13px;
+        }
+        .i3{
+            background-position: -89px -13px;
+        }
+        header{
+            background: url("img/banner.jpg")no-repeat;
+            height: 800px;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 text-center" style="background: #cccccc;padding: 50px 0 20px 0">
+                    <div class="h2 text-white">
+                        <span class="glyphicon glyphicon-leaf"></span>
+                        Spa
+                    </div>
+                    <div class="text-white h5 text-capitalize">
+                        magic of soul
+                    </div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+                    <nav>
+                        <nav>
+                            <ul class="nav ul1 nav-justified text-center">
+                                <li class="active">
+                                    <a class="text-white">
+                                        <div class="text-capitalize small">home</div>
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white">
+                                        <div class="text-capitalize small">services</div>
+                                        <span class="glyphicon glyphicon-hand-right"></span>
+                                    </a>
+                                </li>
+                                <li> <a class="text-white">
+                                    <div class="text-capitalize small">about</div>
+                                    <span class="glyphicon glyphicon-globe"></span>
+                                </a></li>
+                                <li> <a class="text-white">
+                                    <div class="text-capitalize small">home</div>
+                                    <span class="glyphicon glyphicon-home"></span>
+                                </a></li>
+                                <li> <a class="text-white">
+                                    <div class="text-capitalize small">blog</div>
+                                    <span class="glyphicon glyphicon-picture"></span>
+                                </a></li>
+                                <li> <a class="text-white">
+                                    <div class="text-capitalize small">contact</div>
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                </a></li>
+                            </ul>
+                        </nav>
+                    </nav>
+                </div>
+                <div class="col-lg-offset-2 col-lg-2 text-center">
+                    <nav>
+                        <ul class="nav nav-pills ttt">
+                            <li class="icon bg-white i1">
+
+                            </li>
+                            <li class="icon bg-white i2">
+
+                            </li>
+                            <li class="icon bg-white i3">
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 100px">
+                <div class="col-lg-7 col-lg-offset-3 text-left">
+                    <div class="h1 mag text-capitalize text-white">
+                        feeling the life in a different way
+                    </div>
+                    <div class="small text-muted">
+                        dut persplcatis omnise anav error sit voluptatem accuantium<br>
+                        doloremque laudantium totanf periem,eqaue ipsa quae ab illo inventore<br>
+                        et buasi architecto beatae vitae disa sunt exolicabo.
+                    </div>
+                    <button class="btn btn-success text-capitalize text-center" style="margin-top: 50px">
+                        learn more
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="container">
+        <div class="h3 text-success text-capitalize">
+            contact us
+        </div>
+        <div id="allmap"></div>
+        <div class="row pt">
+            <div class="col-lg-4">
+                <div class="h3 text-success text-capitalize">
+                    addredd:
+                </div>
+                <div class="text-muted text-capitalize">
+                    eiusmod tempor inc<br>
+                    9560 st dolore place<br>
+                    telephone:+1 800 603 6035<br>
+                    FAX:+1 800 889 9898
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="h3 text-success text-capitalize">
+                    contact form
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <input type="text" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="text" placeholder="Telephone" class="form-control">
+                    </div>
+                </div>
+                <input type="text" placeholder="Message..." class="form-control eara">
+                <button class="btn btn-success text-capitalize text-center" style="margin-top: 20px;padding: 5px 30px">
+                    submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid" style="background: #cccccc">
+        <div class="search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="h2 text-capitalize text-success">
+                            keep in touch
+                        </div>
+                        <div class="text-muted">
+                            We Will give you latest information about spa.
+                        </div>
+                    </div>
+                    <div class="col-lg-8 pt">
+                        <div class="input-group">
+                            <input type="text" class="form-control" >
+                            <span class="text-white input-group-addon glyphicon glyphicon-chevron-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #111111">
+        <div class="foot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="h5 text-capitalize text-white">
+                            navigallon
+                        </div>
+                        <nav>
+                            <ul class="nav nav-pills nav-stacked text-muted small text-capitalize">
+                                <li>home</li>
+                                <li>about</li>
+                                <li>servicss</li>
+                                <li>blog</li>
+                                <li>contact</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="h5 text-capitalize text-white">
+                            members
+                        </div>
+                        <nav>
+                            <ul class="nav nav-pills nav-stacked text-muted small text-capitalize">
+                                <li>customer support</li>
+                                <li>platinum support</li>
+                                <li>fold support</li>
+                                <li>standard support</li>
+                                <li>training</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-1">
+                        <div class="h5 text-capitalize text-white">
+                            get in touch
+                        </div>
+                        <nav>
+                            <ul class="nav nav-pills nav-stacked small text-muted">
+                                <li>Old-ola street jump</li>
+                                <li>260-14 City,Country</li>
+                                <li>+62 000-0000-00</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-1">
+                        <div class="h2 text-capitalize text-white">
+                            spa
+                            <span class="small text-white" style="font-size: 15px">
+                                magic of soul
+                            </span>
+                        </div>
+                        <nav>
+                            <ul class="nav nav-pills">
+                                <li class="icon bg-white i1">
+
+                                </li>
+                                <li class="icon bg-white i2">
+
+                                </li>
+                                <li class="icon bg-white i3">
+
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="text-muted text-capitalize" style="margin-top: 20px">
+                            copyright @2015.company name all right reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+    /*缩放控件type有四种类型:
+     BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
+
+    //添加控件和比例尺
+    function add_control(){
+        map.addControl(top_left_control);
+        map.addControl(top_left_navigation);
+        map.addControl(top_right_navigation);
+    }
+    //移除控件和比例尺
+    function delete_control(){
+        map.removeControl(top_left_control);
+        map.removeControl(top_left_navigation);
+        map.removeControl(top_right_navigation);
+    }
+</script>
+</body>
+</html>

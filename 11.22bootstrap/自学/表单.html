@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!--手机版100%最大化显示-->
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <!--表单-->
+    <form action="">
+        <div class="form-group">
+            <label for="">用户名</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">密码</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">留言</label>
+            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">城市</label>
+            <select name="" id="" class="form-control">
+                <option value="">北京</option>
+                <option value="">北京</option>
+                <option value="">北京</option>
+                <option value="">北京</option>
+            </select>
+
+        </div>
+        <!--复选框-->
+        <div class="form-group ">
+            <label for="">爱好：</label>
+            <!--多选、-->
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox">篮球
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox">篮球
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox">篮球
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox">篮球
+                </label>
+            </div>
+
+        </div>
+        <!--单选框-->
+        <div class="form-group ">
+            <label for="">爱好：</label>
+            <!--单选、-->
+            <div class="radio">
+                <label for="">
+                    <input type="radio" name="dxk">篮球
+                </label>
+            </div>
+            <div class="radio">
+                <label for="">
+                    <input type="radio"  name="dxk">篮球
+                </label>
+            </div>
+            <div class="radio">
+                <label for="">
+                    <input type="radio"  name="dxk">篮球
+                </label>
+            </div>
+            <div class="radio">
+                <label for="">
+                    <input type="radio"  name="dxk">篮球
+                </label>
+            </div>
+
+        </div>
+        <!--文件上传-->
+        <div class="form-group ">
+            <label for="">文件上传：</label>
+            <input type="file" name="" id="">
+
+        </div>
+        <!--输入框组-->
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="text" class="form-control">
+                <div class="input-group-addon">.00</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="OK" class="btn btn-primary">
+            <input type="reset" value="Cancel" class="btn btn-danger">
+        </div>
+
+    </form>
+    <!--水平排列的表单-->
+    <form action="" class="form-horizontal">
+        <div class="form-group">
+            <label for="" class="col-sm-2 control-label">姓名</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control " disabled placeholder="username">
+            </div>
+            <label for="" class="col-sm-2 control-label">密码</label>
+            <div class="col-md-10">
+                <input type="text" readonly class="form-control " >
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <input type="submit" value="OK" class="btn btn-primary">
+                <input type="reset" value="Cancel" class="btn btn-danger">
+            </div>
+
+        </div>
+    </form>
+
+    <!--表单的校验-->
+    <form action="" class="form-horizontal">
+        <div class="form-group has-success">
+            <label for="" class="col-sm-2 control-label">姓名</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control " placeholder="username">
+            </div>
+            <label for="" class="col-sm-2 control-label">密码</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control " >
+            </div>
+        </div>
+        <div class="form-group has-error">
+            <label for="" class="col-sm-2 control-label">姓名</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control " placeholder="username">
+            </div>
+            <label for="" class="col-sm-2 control-label">密码</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control " >
+            </div>
+        </div>
+        <div class="form-group has-warning">
+            <label for="" class="col-sm-2 control-label">姓名</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control " placeholder="username">
+            </div>
+            <label for="" class="col-sm-2 control-label">密码</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control " >
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="col-md-10 col-md-offset-2">
+                <input type="submit" value="OK" class="btn btn-primary">
+                <input type="reset" value="Cancel" class="btn btn-danger">
+            </div>
+
+        </div>
+    </form>
+
+
+</div>
+
+</body>
+</html>

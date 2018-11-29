@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+.row{
+    display: none;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+        <ul class="nav nav-tabs ">
+            <!--胶囊式导航-->
+            <li class="active"><a href="#">java</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">h5</a></li>
+        </ul>
+    <div class="row" style="padding: 15px">
+            <p  class="">1111java is vary muchlixun is vary muchlixun is vary muchlixun
+                is vary muchlixun is vary muchllixun is vary much
+                ixun is vary muchlixun is vary muchlixun is vary much</p>
+            <p class="">php is vary muchlixun is vary muchlixun is vary muchlixun
+                is vary muchlixun is vary muchllixun is vary much
+                ixun is vary muchlixun is vary muchlixun is vary much</p>
+            <p class="">h5 is vary muchlixun is vary muchlixun is vary muchlixun
+                is vary muchlixun is vary muchllixun is vary much
+                ixun is vary muchlixun is vary muchlixun is vary much</p>
+        </div>
+    <div class="row" style="padding: 15px">
+        <p  class="">22222222java is vary muchlixun is vary muchlixun is vary muchlixun
+            is vary muchlixun is vary muchllixun is vary much
+            ixun is vary muchlixun is vary muchlixun is vary much</p>
+        <p class="">php is vary muchlixun is vary muchlixun is vary muchlixun
+            is vary muchlixun is vary muchllixun is vary much
+            ixun is vary muchlixun is vary muchlixun is vary much</p>
+        <p class="">h5 is vary muchlixun is vary muchlixun is vary muchlixun
+            is vary muchlixun is vary muchllixun is vary much
+            ixun is vary muchlixun is vary muchlixun is vary much</p>
+    </div>
+    <div class="row" style="padding: 15px">
+        <p  class="">33333333333java is vary muchlixun is vary muchlixun is vary muchlixun
+            is vary muchlixun is vary muchllixun is vary much
+            ixun is vary muchlixun is vary muchlixun is vary much</p>
+        <p class="">php is vary muchlixun is vary muchlixun is vary muchlixun
+            is vary muchlixun is vary muchllixun is vary much
+            ixun is vary muchlixun is vary muchlixun is vary much</p>
+        <p class="">h5 is vary muchlixun is vary muchlixun is vary muchlixun
+            is vary muchlixun is vary muchllixun is vary much
+            ixun is vary muchlixun is vary muchlixun is vary much</p>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('li').mouseenter(function(){
+            $(this).addClass('active');
+            $('li').not($(this)).removeClass('active');
+            idx=$(this).index('li');
+            $('.row').eq(idx).show();
+            $('.row').not($('.row').eq(idx)).hide();
+        });
+        $('.row').eq(0).show();
+    })
+</script>
+</body>
+</html>
